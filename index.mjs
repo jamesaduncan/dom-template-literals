@@ -25,8 +25,11 @@ class TemplateEngine {
     }
 }
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const engine = new TemplateEngine();
     engine.render( document.body, {} );
 });
 
+export default TemplateEngine;
