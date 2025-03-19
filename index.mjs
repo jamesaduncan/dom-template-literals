@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
             node.textContent = eval("`"+node.textContent+"`");
         else { // attributes
             for ( const attr of node.attributes ) {
-                console.log( attr.value );
                 try {
                     attr.value = eval("`" + attr.value + "`");
                 } catch(e) {
